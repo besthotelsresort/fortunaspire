@@ -1,0 +1,2 @@
+# fortunaspire
+Static site: fortunaspire
