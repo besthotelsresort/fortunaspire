@@ -61,11 +61,11 @@ h1{font-family:Georgia, serif;font-size:30px;font-weight:500;margin:14px 0 20px}
 ul{list-style:none;margin-bottom:32px}
 li{padding:10px 0 10px 28px;position:relative;color:#56708c;font-size:15px}
 li::before{content:'';position:absolute;left:0;top:18px;width:10px;height:10px;background:#2b6cb0;border-radius:50%}
-.btn{display:block;width:100%;padding:16px;text-align:center;background:#2b6cb0;color:#fff;border-radius:4px;text-decoration:none;font-weight:600;letter-spacing:1px;transition:all .3s;box-shadow:0 8px 24px #2b6cb044}
-.btn:hover{background:#1e4e7c;transform:translateY(-2px)}
+.btn{position:relative;overflow:hidden;display:inline-block;border:none;cursor:pointer;font-family:inherit;padding:clamp(24px,3.6vw,38px) clamp(58px,11vw,128px);background:#7ed957;color:#0a2410;text-decoration:none;border-radius:4px;font-weight:800;letter-spacing:3px;text-transform:uppercase;font-size:clamp(19px,2.8vw,28px);transition:transform .2s;animation:ctaPulse 1.9s ease-in-out infinite}
+.btn:hover{animation-play-state:paused;transform:translateY(-3px)}
 .deny{display:block;text-align:center;margin-top:14px;color:#56708c;font-size:13px}
 @media(max-width:768px){.wrap{grid-template-columns:1fr}.image{min-height:200px}}
-</style></head><body>
+.btn::before{content:'';position:absolute;top:0;left:-60%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.5),transparent);transform:skewX(-20deg);animation:ctaShine 2.6s ease-in-out infinite}@keyframes ctaPulse{0%{transform:translateY(0);box-shadow:0 10px 26px #7ed95755,0 0 0 0 #7ed95788}55%{transform:translateY(-6px);box-shadow:0 28px 60px #7ed957cc,0 0 0 24px #7ed95700}100%{transform:translateY(0);box-shadow:0 10px 26px #7ed95755,0 0 0 0 #7ed95700}}@keyframes ctaShine{0%{left:-60%}45%{left:160%}100%{left:160%}}</style></head><body>
 <div class="wrap">
   <div class="image">
     <div class="brand">FORTUNASPIRE</div>
